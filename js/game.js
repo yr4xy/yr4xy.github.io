@@ -974,6 +974,14 @@ function normalize(v,vmin,vmax,tmin, tmax){
 
 var fieldDistance, energyBar, replayMessage, fieldLevel, levelCircle;
 
+function doConsole(){
+  console.log('Hey! Malcolm~');
+  console.log('Happy 5·20!');
+  console.log('这是一个基于 threejs 教程 demo 快速搭建的网页');
+  console.log('原教程请看：https://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/');
+  console.log('Hope u like it ❤️');
+}
+
 function init(event){
 
   // UI
@@ -999,7 +1007,7 @@ function init(event){
   document.addEventListener('touchmove', handleTouchMove, false);
   document.addEventListener('mouseup', handleMouseUp, false);
   document.addEventListener('touchend', handleTouchEnd, false);
-
+  doConsole();
   loop();
 }
 

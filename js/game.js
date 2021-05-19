@@ -6,7 +6,7 @@ var Colors = {
     brownDark:0x23190f,
     pink:0xF5986E,
     yellow:0xf4ce93,
-    blue:0x68c3c0,
+    blue:0x67D2FF,
 
 };
 
@@ -459,7 +459,7 @@ Sky = function(){
     var h = game.seaRadius + 150 + Math.random()*200;
     c.mesh.position.y = Math.sin(a)*h;
     c.mesh.position.x = Math.cos(a)*h;
-    c.mesh.position.z = -300-Math.random()*500;
+    c.mesh.position.z = -300-Math.random()*200;
     c.mesh.rotation.z = a + Math.PI/2;
     var s = 1+Math.random()*2;
     c.mesh.scale.set(s,s,s);
@@ -858,6 +858,7 @@ function loop(){
     airplane.mesh.position.y -= game.planeFallSpeed*deltaTime;
 
     if (airplane.mesh.position.y <-200){
+      alert(`BTW:\n  Your curly hair is cute.\n  Just like the pilot~❤️`);
       showReplay();
       game.status = "waitingReplay";
 

@@ -858,7 +858,7 @@ function loop(){
     airplane.mesh.position.y -= game.planeFallSpeed*deltaTime;
 
     if (airplane.mesh.position.y <-200){
-      alert(`BTW:\n  Your curly hair is cute.\n  Just like the pilot~❤️`);
+      alert(`BTW:\n  Your curly hair is cute.\n  Just like the pilot's~❤️`);
       showReplay();
       game.status = "waitingReplay";
 
